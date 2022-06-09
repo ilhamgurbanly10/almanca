@@ -1,0 +1,392 @@
+
+/* our-services */
+
+.our-services-main-title {
+	width: 100%;
+	margin: 0 auto 0;
+}
+
+.our-services-main-text {
+	text-align: center;
+	width: 100%;
+	margin: .5rem auto 0;
+}
+
+.our-services-link {
+	margin: 1rem 0 0;
+}
+
+@media (min-width: 992px) {
+	
+	.our-services-main-title {
+		width: 80%;
+	}
+
+	.our-services-main-text {
+		width: 80%;
+	}
+
+}
+
+/* the-end-of-our-services */
+
+
+
+/* connect */
+
+.connect-section {
+	width: 100%;
+	position: relative;
+	min-height: 20vw;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	overflow: hidden;
+	padding: 5rem 1rem;
+}
+
+.connect-title,
+.connect-text {
+	width: 100%;
+	text-align: center;
+	font-size: 27px;
+	color: var(--white);
+	margin: 0;
+	position: relative;
+	z-index: 5;
+}
+
+.connect-title {
+	font-style: italic;
+	opacity: .9;
+}
+
+.connect-text {
+	font-weight: bold;
+	margin-top: 1rem;
+}
+
+.connect-text span {
+	color: var(--blue);
+}
+
+/* the-end-of-connect */
+
+
+
+/* other-services */
+
+.other-services-main-text {
+	text-align: center;
+	word-spacing: 4px;
+	margin-bottom: .5rem;
+}
+
+.other-services-title {
+	text-align: center;
+	margin: 1.5rem 0 0;
+}
+
+.other-services-text {
+	text-align: center;
+	margin: 1rem 0 0;
+}
+
+/* the-end-of-other-services */
+
+
+
+/* who-we-are */
+
+.who-we-are-section {
+	background-color: var(--lightgrey2);
+	padding-bottom: 5rem;
+}
+
+.who-we-are-section-list {
+	width: 100%;
+
+}
+
+.who-we-are-title {
+	font-weight: normal;
+	font-size: 25px;
+	margin: 0;
+}
+
+.who-we-are-text {
+	margin: 1.5rem 0 0;
+}
+
+.who-we-are-link {
+	margin: 1.5rem 0 0;
+}
+
+/* ---skill-list--- */
+.who-we-are-skill-list.fl-is-scrolled .who-we-are-skill-item:first-child .who-we-are-skill-line::before {
+	width: 98%;
+}
+
+.who-we-are-skill-list.fl-is-scrolled .who-we-are-skill-item:first-child .who-we-are-skill-line::after {
+	content: "98%";
+	right: 2%;
+}
+
+.who-we-are-skill-list.fl-is-scrolled .who-we-are-skill-item:nth-child(2) .who-we-are-skill-line::before {
+	width: 90%;
+}
+
+.who-we-are-skill-list.fl-is-scrolled .who-we-are-skill-item:nth-child(2) .who-we-are-skill-line::after {
+	content: "90%";
+	right: 10%;
+}
+
+.who-we-are-skill-list.fl-is-scrolled .who-we-are-skill-item:nth-child(3) .who-we-are-skill-line::before {
+	width: 85%;
+}
+
+.who-we-are-skill-list.fl-is-scrolled .who-we-are-skill-item:nth-child(3) .who-we-are-skill-line::after {
+	content: "85%";
+	right: 15%;
+}
+
+.who-we-are-skill-list.fl-is-scrolled .who-we-are-skill-item:last-child .who-we-are-skill-line::before {
+	width: 80%;
+}
+
+.who-we-are-skill-list.fl-is-scrolled .who-we-are-skill-item:last-child .who-we-are-skill-line::after {
+	content: "80%";
+	right: 20%;
+}
+
+/* the-end-of-who-we-are */
+
+
+
+/* prices */
+
+.prices-section {
+	overflow: hidden;
+	padding: 4rem 0 5.5rem;
+}
+
+.prices-main-text {
+	text-align: center;
+	word-spacing: 4px;
+	margin-bottom: .5rem;
+	color: white;
+	position: relative;
+	z-index: 2;
+}
+
+.prices-main-title {
+	color: white;
+}
+
+.prices-list {
+	position: relative;
+	z-index: 2;
+}
+
+.prices-item {
+	border-radius: .7rem;
+	border: .1px solid lightgrey;
+	padding: 2rem;
+	background-color: var(--white);
+}
+
+.prices-feature:nth-child(2) {
+	margin-top: 1.5rem;
+}
+
+.prices-title {
+	font-size: 22px;
+	color: var(--blue);
+	padding-bottom: 1.5rem; 
+	border-bottom: 1px solid lightgrey;
+	margin: 0;
+}
+
+.prices-title span {
+	color: var(--darkgrey3);
+	position: relative;
+	top: 2px;
+	margin-left: 5px;
+	font-size: 17px;
+}
+
+.prices-link {
+	margin: 1.5rem 0 0;
+}
+
+.prices-main-item {
+	background-color: var(--blue);
+	border: 0;
+}
+
+.prices-main-item .prices-title,
+.prices-main-item .prices-title span,
+.prices-main-item .prices-feature {
+	color: white;
+	border-color: white;
+}
+
+.prices-main-item .prices-link {
+	background-color: var(--white);
+	color: var(--darkgrey) !important;
+}
+
+.prices-main-item .prices-link:hover {
+	background-color: #d1cfcf !important;
+}
+
+/* the-end-ofprices */
+
+
+
+/* teachers */
+
+.teachers-main-text {
+	text-align: center;
+	word-spacing: 4px;
+	margin-bottom: .5rem;
+}
+
+.teachers-title {
+	color: var(--blue);
+	margin: 1rem 0 0;
+}
+
+.teachers-text-description {
+	color: var(--darkgrey3);
+	font-size: 13px;
+	margin-left: .5rem;
+}
+
+.teachers-text {
+	margin: 1rem 0 0;
+}
+
+.teachers-bottom-item {
+	margin-right: 1.8rem;
+}
+
+.teachers-bottom-link i {
+	color: black !important;
+}
+
+/* the-end-of-teachers */
+
+
+
+/* comments */
+
+.comments-section {
+	overflow: hidden;
+	padding: 7rem 0;
+}
+
+.comments-bg-img {
+
+}
+
+.comments-list {
+	
+}
+
+.comments-item {
+	display: flex !important;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+.comments-img-container {
+	overflow: hidden;
+	width: 90px;
+	height: 90px;
+	margin-right: 1rem;
+}
+
+.comments-img {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+}
+
+.comments-text-container {
+	width: calc(100% - (90px + 1rem))
+}
+
+.comments-text {
+	margin: 0;
+	color: white;
+	font-size: 18px;
+}
+
+.comments-username {
+	margin: 1.5rem 0 0;
+	color: var(--blue);
+}
+
+.comments-list {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+@media (min-width: 576px) {
+
+	.comments-list {
+		padding-right: 7%;
+		padding-left: 7%;
+	}	
+		
+}
+
+@media (min-width: 768px) {
+	
+}
+
+@media (min-width: 992px) {
+
+	.comments-list {
+		padding-left: 11.5%; 
+		padding-right: 11.5%;
+	}
+		
+}
+
+/* the-end-of-comments */
+
+
+
+/* travels */
+
+.travels-main-text {
+	text-align: center;
+	word-spacing: 4px;
+	margin-bottom: .5rem;
+}
+
+.travels-item-container {
+	padding: 1.2rem;
+	background-color: white;
+	border-right: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+.travels-title {
+	font-weight: normal;
+}
+
+.travels-text {
+	margin: 1.5rem 0 0;
+}
+
+/* the-end-of-travels */
+
+

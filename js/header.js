@@ -1,17 +1,60 @@
 
-// modal-container
+// buy
 
-hideModalCOntainer();
+const buy = () => {
 
-function hideModalCOntainer() {
+	const buy = document.querySelector('.buy');
+	const text = buy.querySelector('.buy-text');
+	const links = buy.querySelectorAll('.buy-link');
 
-	const modal = document.querySelector('#userModalContainer');
-	const btn = document.querySelector('.user-modal-con-close-btn');
+	links[0].onmouseover = function() {
+		text.style.top = ".6rem";
+		text.innerHTML = this.getAttribute('data-text');
+	}
 
-	function hide() { modal.classList.remove('fl-show'); }
+	links[1].onmouseover = function() {
+		text.style.top = "calc(.6rem + 50px)";
+		text.innerHTML = this.getAttribute('data-text');
+	}
 
-	btn.addEventListener('click', hide);
+	links[2].onmouseover = function() {
+		text.style.top = "calc(.6rem + 100px)";
+		text.innerHTML = this.getAttribute('data-text');
+	}
+}
+
+buy();
+
+// the-end-of-buy
+
+
+
+// counter
+
+const counter = () => {
+
+	const counters = document.querySelectorAll('.counter-number');
+	var scrollLimit = window.innerHeight || document.documentElement.clientHeight;
+	scrollLimit -= 100;
+
+	const isInView = () => {
+
+		const elementTop = counters[0].getBoundingClientRect().top;
+
+		if (elementTop <= scrollLimit) {
+
+			window.removeEventListener('scroll', isInView);	
+			for (let i = 0; i < counters.length; i++) { flashCounter(counters[i], "get-from-target", 0, 3, 1) }
+
+		}
+
+	}
+
+	window.addEventListener('scroll', isInView);
+	window.addEventListener('load', isInView);	
 
 }
 
-// the-end-of-modal-container
+counter();
+
+// the-end-of-counter

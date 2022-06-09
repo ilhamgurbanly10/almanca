@@ -1,61 +1,22 @@
 
-// head-simple-slider
+// scroll-animation
 
-flashSimpleSlider("#headSimpleSlider", {
-	autoplay: true,
-	buttons: true
-});
+const pageScrollAnimation = () => {
 
-// the-end-of-head-simple-slider
+	const elements = document.querySelectorAll('.page-scroll-animation');
+	for (let i = 0; i < elements.length; i++) { flashIsScrolled(elements[i]); }
 
+}
 
+pageScrollAnimation();
 
-// page-first-slider
-
-$('.page-first-slider').slick({
-  dots: false,
-  infinite: true,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  speed: 300,
-  arrows: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2
-      }
-    }
-  ]  
-});
-
-// page-first-slider
+// the-end-of-scroll-animation
 
 
 
-// page-second-slider
+// skills-list
 
-$('.page-second-slider').slick({
-  dots: false,
-  infinite: true,
-  slidesToShow: 5,
-  slidesToScroll: 1,
-  speed: 300,
-  arrows: true,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2
-      }
-    },
-    {
-      breakpoint: 599,
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]  
-});
+const skillsList = document.querySelector('.who-we-are-skill-list');
+flashIsScrolled(skillsList);
 
-// page-second-slider
+// the-end-of-skills-list
